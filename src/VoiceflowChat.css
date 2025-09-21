@@ -1,0 +1,35 @@
+/* VoiceflowChat.css */
+
+/* Make sure the chat container has proper dimensions */
+#voiceflow-chat {
+  width: 400px !important;
+  height: 500px !important;
+}
+
+/* Style the iframe to fit properly */
+#voiceflow-chat iframe {
+  width: 100% !important;
+  height: 460px !important; /* Leave room for our custom footer */
+  border: none !important;
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* Help button styles */
+.help-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #5a67d8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 10001;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(91, 103, 216, 0.4);
+}
+
+/* Hide the default Voiceflow launcher if it appears */
+.vf-chat-widget {
+  display: none !important;
+}
